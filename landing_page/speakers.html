@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Audiophile website</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800&family=Epilogue:wght@500&family=Inter:wght@700&family=Karla&family=Lexend+Deca&family=Manrope:wght@500;700&family=Overpass&display=swap");
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      overflow-x: hidden;
+      background-color: rgb(239, 253, 253);
+    }
+
+    .border1 {
+      height: 50vh;
+      width: 100vw;
+      border: 1px solid transparent;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      background-color: black;
+    }
+
+    nav {
+      position: relative;
+      top: 35px;
+      height: 15vh;
+      width: 94vw;
+      justify-content: space-between;
+      padding: 0px 60px;
+      display: flex;
+    }
+
+    #audio {
+      height: 28px;
+      position: relative;
+      left: 100px;
+      top: 3px;
+    }
+
+    .links {
+      position: relative;
+      bottom: 38px;
+      left: 140px;
+      height: 100%;
+      width: 55%;
+      display: flex;
+      align-items: center;
+    }
+
+    .links ul {
+      width: 64%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .links li {
+      list-style: none;
+    }
+
+    .links a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      font-family: "Big Shoulders Display", cursive;
+      font-family: "Epilogue", sans-serif;
+      font-family: "Inter", sans-serif;
+      font-family: "Karla", sans-serif;
+      font-family: "Lexend Deca", sans-serif;
+      font-family: "Manrope", sans-serif;
+      font-family: "Overpass", sans-serif;
+    }
+
+    .logo {
+      position: relative;
+      top: 5px;
+      justify-content: space-evenly;
+    }
+
+    hr {
+      color: gray;
+      position: relative;
+      bottom: 25px;
+      width: 80%;
+    }
+
+    .speakers{
+      position: relative;
+      left:350;
+    }
+    .speakers h1{
+        margin-left: 650px;
+        margin-top: 60px;
+        font-size: 45px; 
+        color: white;
+        font-family: 'Barlow', sans-serif;
+      font-family: 'Big Shoulders Display', cursive;
+      font-family: 'Epilogue', sans-serif;
+      font-family: 'Fraunces', serif;
+      font-family: 'Inter', sans-serif;
+      font-family: 'Karla', sans-serif;
+      font-family: 'Lexend Deca', sans-serif;
+      font-family: 'Manrope', sans-serif;
+      font-family: 'Overpass', sans-serif;
+    }
+
+    .border2 {
+      position: relative;
+      top: 150px;
+      left: 170px;
+      height: 74vh;
+      width: 77vw;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      background-color: rgb(220, 127, 70);
+    }
+
+    .circle {
+      background-image: url(assets/home/desktop/pattern-circles.svg);
+      background-repeat: no-repeat;
+      background-position: -140px -30px;
+    }
+
+    .speaker {
+      position: relative;
+      top: 250px;
+      left: 160px;
+      display: flex;
+    }
+
+    .premium_speaker {
+      position: relative;
+      bottom: 285px;
+      right: 20px;
+      border: 1px solid transparent;
+      background-image: url(assets/shared/desktop/image-category-thumbnail-speakers.png);
+      background-repeat: no-repeat;
+      background-size: 46em;
+      background-position: -175px 100px;
+      height: 560px;
+      width: 380px;
+    }
+
+    .ZX9 {
+      border: 1px solid transparent;
+      height: 560px;
+      width: 380px;
+      position: relative;
+      bottom: 158px;
+      left: 130px;
+    }
+
+    .ZX9 h1 {
+      font-size: 68px;
+      color: white;
+      line-height: 70px;
+      margin-right: 350px;
+      font-family: 'Barlow', sans-serif;
+      font-family: 'Big Shoulders Display', cursive;
+      font-family: 'Epilogue', sans-serif;
+      font-family: 'Fraunces', serif;
+      font-family: 'Inter', sans-serif;
+      font-family: 'Karla', sans-serif;
+      font-family: 'Lexend Deca', sans-serif;
+      font-family: 'Manrope', sans-serif;
+      font-family: 'Overpass', sans-serif;
+    }
+
+    .ZX9 p {
+      position: relative;
+      bottom: 30px;
+      color: rgb(222, 219, 219);
+      margin-right: 0px;
+      font-size: 17px;
+      font-family: 'Barlow', sans-serif;
+      font-family: 'Big Shoulders Display', cursive;
+      font-family: 'Epilogue', sans-serif;
+      font-family: 'Fraunces', serif;
+      font-family: 'Inter', sans-serif;
+      font-family: 'Karla', sans-serif;
+      font-family: 'Lexend Deca', sans-serif;
+      font-family: 'Manrope', sans-serif;
+      font-family: 'Overpass', sans-serif;
+    }
+
+    .ZX9 button {
+      position: relative;
+      bottom: 10px;
+      height: 55px;
+      border: 1px solid transparent;
+      width: 165px;
+      background-color: black;
+      font-size: 13px;
+      letter-spacing: 2px;
+      color: white;
+    }
+
+    .border4 {
+      position: relative;
+      top: 300px;
+      border: 1px solid black;
+      height: 50vh;
+      width: 100vw;
+      background-color: black;
+    }
+
+    footer {
+      position: relative;
+      top: 60px;
+      height: 15vh;
+      width: 94vw;
+      justify-content: space-between;
+      padding: 0px 60px;
+      display: flex;
+    }
+
+    #audio2 {
+      height: 30px;
+      position: relative;
+      left: 100px;
+      top: 3px;
+    }
+
+    .links2 {
+      position: relative;
+      bottom: 38px;
+      left: 250px;
+      height: 100%;
+      width: 55%;
+      display: flex;
+      align-items: center;
+    }
+
+    .links2 ul {
+      width: 62%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .links2 li {
+      list-style: none;
+    }
+
+    .links2 a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      font-family: "Big Shoulders Display", cursive;
+      font-family: "Epilogue", sans-serif;
+      font-family: "Inter", sans-serif;
+      font-family: "Karla", sans-serif;
+      font-family: "Lexend Deca", sans-serif;
+      font-family: "Manrope", sans-serif;
+      font-family: "Overpass", sans-serif;
+    }
+
+    .audio_needs{
+      align-items: center;
+      display: flex;
+    }
+    .footer {
+      position: relative;
+      top: 10px;
+      left: 160px;
+      border: 1px solid transparent;
+      height: 30vh;
+      width: 38vw;
+    }
+
+    .footer p {
+      color: rgb(179, 174, 174);
+      line-height: 25px;
+      margin-right: 35px;
+      font-size: 16px;
+      font-family: 'Barlow', sans-serif;
+      font-family: 'Big Shoulders Display', cursive;
+      font-family: 'Epilogue', sans-serif;
+      font-family: 'Fraunces', serif;
+      font-family: 'Inter', sans-serif;
+      font-family: 'Karla', sans-serif;
+      font-family: 'Lexend Deca', sans-serif;
+      font-family: 'Manrope', sans-serif;
+      font-family: 'Overpass', sans-serif;
+    }
+
+    #copyright {
+      position: relative;
+      top: 30px;
+      color: #b3aeae;
+      font-size: 16px;
+      font-family: 'Barlow', sans-serif;
+      font-family: 'Big Shoulders Display', cursive;
+      font-family: 'Epilogue', sans-serif;
+      font-family: 'Fraunces', serif;
+      font-family: 'Inter', sans-serif;
+      font-family: 'Karla', sans-serif;
+      font-family: 'Lexend Deca', sans-serif;
+      font-family: 'Manrope', sans-serif;
+      font-family: 'Overpass', sans-serif;
+    }
+
+    .icons{
+      position: relative;
+      left: 670px;
+      padding: 10px 40px 0px 0px;
+    }
+    #twit{
+      padding: 30px 14px 0px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="border1">
+    <nav>
+      <img id="audio" src="assets/shared/desktop/logo.svg" alt="logo">
+      <div class="links">
+        <ul>
+          <a href="home.html">
+            <li>HOME</li>
+          </a>
+          <a href="headphones.html">
+            <li>HEADPHONES</li>
+          </a>
+          <a href="speakers.html">
+            <li>SPEAKERS</li>
+          </a>
+          <a href="earphones.html">
+            <li>EARPHONES</li>
+          </a>
+        </ul>
+      </div>
+      <div class="logo">
+        <img src="assets/shared/desktop/icon-cart.svg" height="18px" width="20px" alt="cart">
+      </div>
+    </nav>
+    <hr>
+    <div class="speakers">
+      <h1>SPEAKERS</h1>
+    </div>
+  </div>
+  <div class="border2">
+    <div class="circle">
+      <div class="speaker">
+        <div class="premium_speaker">
+        </div>
+        <div class="ZX9">
+          <h1>ZX9 SPEAKER</h1>
+          <p>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
+          <button>SEE PRODUCT</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="border4">
+    <footer>
+      <img id="audio2" src="assets/shared/desktop/logo.svg" alt="logo">
+      <div class="links2">
+        <ul>
+          <a href="home.html">
+            <li>HOME</li>
+          </a>
+          <a href="headphones.html">
+            <li>HEADPHONES</li>
+          </a>
+          <a href="speakers.html">
+            <li>SPEAKERS</li>
+          </a>
+          <a href="earphones.html">
+            <li>EARPHONES</li>
+          </a>
+        </ul>
+      </div>
+    </footer>
+    <div class="audio_needs">
+      <div class="footer">
+        <p>Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers
+          and sound specialists who are devoted to helping you get the most out of personal audio. Come and
+          visit our demo facility - we’re open 7 days a week.</p>
+        <p id="copyright">Copyright 2021. All Rights Reserved</p>
+      </div>
+      <div class="icons">
+        <img src="assets/shared/desktop/icon-facebook.svg" alt="">
+        <img id="twit" src="assets/shared/desktop/icon-twitter.svg" alt="">
+        <img src="assets/shared/desktop/icon-instagram.svg" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
